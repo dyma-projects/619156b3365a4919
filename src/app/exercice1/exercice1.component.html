@@ -1,0 +1,6 @@
+<button (click)="showContent=!showContent" class="myBtn">Show My Name
+</button>
+
+<div [ngStyle]="myPersoStyle">
+    <p *ngIf="showContent">{{name}}</p>
+</div>
